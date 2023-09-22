@@ -1,0 +1,132 @@
+.singlePost {
+    flex: 9;
+}
+
+.singlePostWrapper {
+    padding: 20px;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.singlePostImg {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.singlePostTitle {
+    text-align: center;
+    margin: 10px;
+    font-family: 'Lora', serif;
+    font-size: 28px;
+}
+
+.singlePostEditInput {
+    text-align: center;
+    margin: 10px;
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.singlePostEditInput:focus {
+    outline: none;
+}
+
+.singlePostEdit {
+    float: right;
+    font-size: 20px;
+}
+
+.singlePostIcon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.singlePostIcon:first-child {
+    color: teal;
+}
+
+.singlePostIcon:last-child {
+    color: tomato;
+}
+
+.singlePostInfo {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    color: #b39656;
+}
+
+.singlePostAuthor {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.PostCatInfo {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    padding: 20px 0;
+    color: #b39656;
+}
+
+.singlePostCatInput {
+    margin-bottom: 10px;
+    color: #373737;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #bbbbbb93;
+    border-radius: 5px;
+}
+
+.singlePostCat {
+    margin-left: 100px;
+    margin-top: -45px;
+    color: #373737;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.singlePostDesc {
+    margin-top: 5px;
+    color: #373737;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.singlePostDescInput {
+    margin-top: 10px;
+    border: 1px solid #bbbbbb93;
+    color: #373737;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.singlePostDescInput:focus {
+    outline: none;
+}
+
+.singlePostDesc::first-letter {
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.singlePostButton {
+    width: 100px;
+    border: none;
+    background-color: teal;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 20px;
+}
