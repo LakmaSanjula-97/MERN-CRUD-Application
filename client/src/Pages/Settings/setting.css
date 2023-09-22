@@ -1,0 +1,110 @@
+.setting {
+    display: flex;
+}
+
+.settingWrapper {
+    flex: 9;
+    padding: 20px;
+}
+
+.settingTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.settingUpdateTitle {
+    margin-top: 25px;
+    font-size: 20px;
+    margin-bottom: 26px;
+    color: rgb(28, 21, 239);
+}
+
+.settingDeleteTitle {
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.settingForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.settingPP {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.settingForm>label {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.settingForm>input {
+    color: gray;
+    margin: 10px 0;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.settingPP>img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.settingPPIcon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.settingSubmit {
+    width: 150px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.settingDelete {
+    width: 150px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(161, 24, 0);
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.settingForm>textarea {
+    margin-top: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.547);
+    color: #292929;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+@media (max-width: 768px) {
+    .settingTitle {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+    }
+}
