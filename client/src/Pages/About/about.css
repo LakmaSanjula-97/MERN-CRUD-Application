@@ -1,0 +1,170 @@
+.about {
+    margin: 70px;
+    padding-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutDescription {
+    font-style: italic;
+    color: rgba(43, 43, 43, 0.89);
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 1.6;
+
+}
+
+.aboutHeaderText {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.aboutHeaderTextLT {
+    font-size: 40px;
+    padding-left: 20px;
+    margin-bottom: 0px;
+    color: rgb(26, 26, 26);
+}
+
+.aboutHeaderTextST {
+    font-size: 20px;
+    padding-left: 20px;
+    color: rgb(135, 135, 135);
+}
+
+.headrDescAbout {
+    margin-top: 30px;
+    padding: 20px 100px 20px 100px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.aboutDes {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerImgAbout {
+    padding: 20px 40px;
+    width: 400px;
+    height: 500px;
+}
+
+.aboutDesText {
+    font-size: 20px;
+    padding: 30px 80px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.desAboutHeader {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(61, 61, 61);
+}
+
+.desAboutText {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.6;
+}
+
+.aboutBio {
+    justify-content: space-between;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    padding: 20px 30px 20px 0px;
+}
+
+.aboutBioInput {
+    margin-bottom: 10px;
+    color: #373737;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 30px 10px 0px;
+}
+
+.aboutBioDesInput {
+    margin-bottom: 10px;
+    color: #373737;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    width: 700px;
+    height: fit-content;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.galleryItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galleryImg {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.gallerydesc {
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Media queries for responsive gallery */
+@media (max-width: 1200px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .aboutDes {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .headerImgAbout {
+        width: 100%;
+        height: auto;
+    }
+
+    .aboutBioInput,
+    .aboutBioDesInput {
+        width: 100%;
+    }
+}
