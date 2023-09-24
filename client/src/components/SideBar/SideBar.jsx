@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./sideBar.css";
 import axios from "axios";
 import { Link } from "react-router-dom/cjs/react-router-dom";
+import SidebarCalendar from "../SidebarCalender/SidebarCalendar";
 
 export default function SideBar() {
   const [uniqueVenues, setUniqueVenues] = useState([]);
@@ -49,6 +50,7 @@ export default function SideBar() {
 
   return (
     <div className="sidebar">
+      <SidebarCalendar />
       <div className="sidebarDateItem">
         <span className="sidebarDateTitle">CONCERT DATES</span>
         <ul className="sidebarDateList">
